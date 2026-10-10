@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sophia.EXE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="#home" class="logo">sophia.EXE</a>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button id="theme">☾</button>
+    </header>
+
+    <main>
+        <section id="home" class="home">
+            <div>
+                <p>[ SYSTEM ONLINE ]</p>
+                <h1>sophia<span>.EXE</span></h1>
+                <h2>IT STUDENT + CREATIVE MIND</h2>
+                <p>Olá! Eu sou a Sophia, estudante de tecnologia.</p>
+                <h3 id="typing">Developer.</h3>
+                <a href="#about" class="botao">EXPLORE ↓</a>
+            </div>
+
+        </section>
+
+        <section id="about">
+            <h2>ABOUT ME</h2>
+
+            <div class="about">
+                <p>
+                    Sou estudante de Informática e tenho interesse em
+                    programação, banco de dados e cibersegurança.
+                    Gosto de aprender novas tecnologias, resolver problemas
+                    e transformar ideias em projetos digitais.
+                </p>
+
+                <div class="caixa">
+                    <h3>USER PROFILE</h3>
+                    <p>Nome: Sophia</p>
+                    <p>Área: Tecnologia</p>
+                    <p>Idiomas: Português / Inglês</p>
+                    <p>Status: Online</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2>MY SKILLS</h2>
+
+            <h3>HARD SKILLS</h3>
+            <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Python</span>
+                <span>C#</span>
+                <span>MySQL</span>
+                <span>Networking</span>
+            </div>
+
+            <h3>SOFT SKILLS</h3>
+            <div class="tags">
+                <span>Creativity</span>
+                <span>Teamwork</span>
+                <span>Communication</span>
+                <span>Problem Solving</span>
+                <span>Organization</span>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>MY PROJECTS</h2>
+
+            <div class="projetos">
+                <div class="projeto">
+                    <h3>VANILLA ATELIER</h3>
+                    <p>Site de e-commerce para produtos artesanais.</p>
+                    <p>HTML • CSS</p>
+                    <button class="detalhes"
+                        data-info="E-commerce de produtos artesanais desenvolvido como projeto escolar.">
+                        VIEW PROJECT
+                    </button>
+                </div>
+
+                <div class="projeto">
+                    <h3>ECOWALLET</h3>
+                    <p>Projeto sobre educação financeira e sustentabilidade.</p>
+                    <p>GOOGLE SITES • UI/UX</p>
+                    <button class="detalhes"
+                        data-info="Projeto digital que une educação financeira, sustentabilidade e economia circular.">
+                        VIEW PROJECT
+                    </button>
+                </div>
+
+                <div class="projeto">
+                    <h3>TECH PROJECTS</h3>
+                    <p>Exercícios de programação e banco de dados.</p>
+                    <p>C# • SQL</p>
+                    <button class="detalhes"
+                        data-info="Projetos e exercícios para praticar programação, lógica e bancos de dados.">
+                        VIEW PROJECT
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="github">
+            <h2>WANT TO SEE MY CODE?</h2>
+            <p>Confira meus repositórios e projetos.</p>
+            <a href="https://github.com/soso-zip"
+                target="_blank" class="botao">
+                MY GITHUB ↗
+            </a>
+        </section>
+
+        <section id="contact">
+            <h2>LET'S TALK.</h2>
+
+            <form id="formulario">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" required>
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone"
+                    placeholder="(31) 99999-9999"
+                    maxlength="15" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" required>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" maxlength="500"
+                    placeholder="Escreva sua mensagem..." required></textarea>
+
+                <p id="contador">0/500 caracteres</p>
+
+                <button type="submit" class="botao">ENVIAR ↗</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <h3>sophia.EXE</h3>
+        <p>IT STUDENT • DEVELOPER • CREATIVE MIND</p>
+        <p>Contato: sosantossilva09@gmail.com</p>
+        <p>© 2026 sophia</p>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-caixa">
+            <button id="fechar">X</button>
+            <h2>PROJECT INFO</h2>
+            <p id="info"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
